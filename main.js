@@ -42,7 +42,7 @@ function kendoGridDataBound(e) {
         column = columns[$(this).index() - numItems];
 
         if (column) {
-            $(this).attr("data-title", column.title + " (" + abp.localization.localize("Total", "BI") + ")");
+            $(this).attr("data-title", column.title);
             hideNbsp($(this));
         }
     });
